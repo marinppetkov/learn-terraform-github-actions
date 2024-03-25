@@ -68,7 +68,7 @@ resource "aws_security_group" "web-sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   tags = {
-    name = "test-vm2"
+    name = "test-vm"
   }
 }
 
