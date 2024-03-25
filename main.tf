@@ -67,6 +67,9 @@ resource "aws_security_group" "web-sg" {
     protocol    = "-1"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  tags = {
+    name = "test-vm"
+  }
 }
 
 output "web-address" {
@@ -74,3 +77,4 @@ output "web-address" {
 }
 
 ### No-op
+### No-op2
